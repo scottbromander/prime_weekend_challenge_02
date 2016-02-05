@@ -11,7 +11,7 @@ app.get("/data", function(req,res,next){
 
 app.get("/*", function(req,res,next){
     var file = req.params[0] || "views/index.html";
-    res.sendFile(path.join(__dirname, "./public/", file))
+    res.sendFile(path.join(__dirname, "./public/", file));
 });
 
 app.listen(app.get("port"), function(req,res,next){

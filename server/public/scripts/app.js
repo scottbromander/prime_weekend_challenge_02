@@ -1,11 +1,6 @@
-
-
 var peopleArray = [];
-
 var indexTracker = 0;
-
 var timeOutTimer;
-
 var intervalFadeTimer = 10000;
 
 $(document).ready(function(){
@@ -18,9 +13,8 @@ $(document).ready(function(){
             updatePerson();
         }
 
-    })
+    });
 });
-
 
 function init(){
     timeOutTimer = setInterval(intervalUpdate, intervalFadeTimer);
@@ -73,7 +67,7 @@ function createIndexPoints(array, $el){
     for(var i = 0; i < array.length; i++){
         //we need i, 1 for each element
         console.log("In loop?");
-        $el.append("<div class='index-point' id='index" + i + "'></div>")
+        $el.append("<div class='index-point' id='index" + i + "'></div>");
 
     }
 }
